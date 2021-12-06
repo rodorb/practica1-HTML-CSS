@@ -9,16 +9,73 @@
     padding: 0 0 3rem 0;
 }
 
-.rejilla img {
-    height: 20rem;
-}
 
-.rejilla a {
+/* .rejilla img {
+    height: 20rem;
+} */
+
+.card {
+    position: relative;
+    cursor: pointer;
+    height: 20rem;
+    width: 13.5rem;
+    display: flex;
     margin: 1rem;
 }
 
+.card-description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-favorite-selected {
+    position: absolute;
+    color: red;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.card-favorite-unselected {
+    position: absolute;
+    color: darkgray;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.card-favorite-selected:hover .fa-heart:before {
+    font-size: 1.5rem;
+    color: darkgray;
+}
+
+.card-favorite-unselected:hover .fa-heart:before {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.card-description {
+    margin: 0 2px 2px 2px;
+    color: black;
+    display: none;
+}
+
+.card:hover .card-description {
+    display: block;
+    /* background-color: rgba(8, 8, 8, 0.9); */
+    border-radius: 1rem;
+    background-image: linear-gradient(transparent, rgb(155, 155, 155));
+    text-shadow: 2px 2px 2px rgb(255 255 255 / 50%), 2px -2px 2px rgb(255 255 255 / 50%), -2px 2px 2px rgb(255 255 255 / 50%), -2px -2px 2px rgb(255 255 255 / 50%);
+}
+
 @media (max-width: 1889px) {
-    .rejilla img {
+    .card {
+        position: relative;
+        cursor: pointer;
         height: 40rem;
+        width: 27rem;
+        display: flex;
+        margin: 1rem;
     }
 }
