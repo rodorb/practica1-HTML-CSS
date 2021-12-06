@@ -1,0 +1,9 @@
+.video-player {
+    height: 48rem;
+    background: black;
+    width: 100%;
+}
+
+.trailer {
+    padding-top: var(--navbar-size);
+}
