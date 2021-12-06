@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Doy un valor al font-size en la raíz */
+
+@font-face {
+    font-family: netflix;
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+
+:root {
+    /* font-size: 16px; */
+    /* hace el desplazamiento en el navegador más suave,
+    solo funciona si la navegación es de un evento
+    generado en el DOM */
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: netflix;
+}
+
+
+/* *,
+*::after,
+*::before {
+    font-family: Roboto, Arial, Helvetica, sans-serif; */
+
+
+/* Esto hace que el tamaño del contenido 
+        tenga en cuenta el padding y el border
+        
+       Al contrario, con content-box el tamaño
+       del contenido, no tiene en cuenta el padding
+       y el border*/
+
+
+/* box-sizing: border-box; */
+
+
+/* } */
+
+body {
+    /* quiero ocupar el 100% de la pantalla, sin espacios */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* img {
+    max-width: 100%;
+} */

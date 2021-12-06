@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    background-color: #343a40;
+    align-items: center;
+    height: var(--navbar-size);
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+#searchbar {
+    border-radius: 1rem;
+    width: 30rem;
+    height: 2rem;
+    padding-left: 1rem;
+}
