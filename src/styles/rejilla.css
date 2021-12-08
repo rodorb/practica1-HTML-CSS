@@ -61,11 +61,15 @@
     display: none;
 }
 
+.card-description p {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 0.9rem;
+}
+
 .card:hover .card-description {
     display: block;
-    /* background-color: rgba(8, 8, 8, 0.9); */
     border-radius: 1rem;
-    background-image: linear-gradient(transparent, rgb(155, 155, 155));
+    background-image: linear-gradient(transparent, rgb(221, 221, 221));
     text-shadow: 2px 2px 2px rgb(255 255 255 / 50%), 2px -2px 2px rgb(255 255 255 / 50%), -2px 2px 2px rgb(255 255 255 / 50%), -2px -2px 2px rgb(255 255 255 / 50%);
 }
 

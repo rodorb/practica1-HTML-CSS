@@ -11,6 +11,7 @@
     /* Declaro una variable en el root 
         que será el tamaño de 50px*/
     --navbar-size: 5rem;
+    --footer-size: 10rem;
     /* --burger-width: 25px;
     --navbar-padding: 5px; */
 }

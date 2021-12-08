@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    background-color: #343a40;
+    background-color: #030328;
     align-items: center;
     height: var(--navbar-size);
     justify-content: space-around;
@@ -16,9 +16,13 @@
 
 .navbar a {
     text-decoration: none;
-    color: white;
+    color: #9e86ff;
     padding: 0.5rem;
     font-size: 1.3rem;
+}
+
+.navbar a:hover {
+    color: white;
 }
 
 #searchbar {
