@@ -1,0 +1,21 @@
+@font-face {
+  font-family: juego;
+  src: url('../fonts/gt.ttf');
+}
+
+:root {
+  --navbar-size: 50px;
+  --burger-width: 25px;
+  --navbar-padding: 5px;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+section > h1, header span, .logo a {
+  font-family: juego;
+}
+
+section img {
+  width: 100%;
+}

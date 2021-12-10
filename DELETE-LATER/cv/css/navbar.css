@@ -1,0 +1,89 @@
+.navbar {
+  background-color: lightblue;
+  /* white;*/
+  height: var(--navbar-size);
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+.navbar .logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: var(--navbar-size);
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .logo a {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* burger menu */
+
+.navbar .burger-label {
+  display: block;
+  position: absolute;
+  width: var(--navbar-size);
+  height: var(--navbar-size);
+  top: 10px;
+  left: 5px;
+}
+
+.navbar .burger-label:before {
+  content: "";
+  box-shadow: 0 3px 0 0 black,
+    0 10px 0 0 black,
+    0 17px 0 0 black;
+  width: 25px;
+  height: 3px;
+  position: absolute;
+}
+
+#burger-checkbox {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 5px;
+  margin: 0;
+  display: none;
+}
+
+#burger-checkbox:checked~.navbar-list {
+  display: block;
+}
+
+
+/* menu de opciones */
+
+.navbar-list {
+  margin: 0;
+  width: 200px;
+  position: fixed;
+  top: var(--navbar-size);
+  bottom: 0;
+  background-color: black;
+  color: white;
+  z-index: 99;
+  list-style-type: none;
+  padding: 0;
+  display: none;
+}
+
+.navbar-list .navbar-item {
+  text-align: center;
+}
+
+.navbar-list a {
+  padding: 1rem 0;
+  width: 100%;
+  display: inline-block;
+  color: aliceblue;
+}

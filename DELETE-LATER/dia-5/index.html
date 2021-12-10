@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Comenzando con flexbox</title>
+  <link rel="stylesheet" href="flexbox.css">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 500px;
+      border: solid 5px pink;
+    }
+
+    .item {
+      width: 100px;
+      height: 60px;
+    }
+
+    .item3 {
+      flex: 1;
+    }
+
+    .item5 {
+      flex: 2;
+    }
+
+    .item7 {
+      flex: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+    <div class="item item9">9</div>
+  </div>
+</body>
+
+</html>
