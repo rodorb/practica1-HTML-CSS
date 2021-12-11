@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    bottom: 50%;
+    background-color: lightblue;
+    border-radius: 1rem;
+    height: 50rem;
+    width: 40rem;
+    background: #9152f8;
+    background: linear-gradient(top, #7579ff, #b224ef);
+    font-size: 1rem;
+    gap: 0.5rem;
+}
+

@@ -7,11 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RRB</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/reset.css">
 </head>
 
 <body>
     <main>
-        <section>
+        <section class="login-box">
+            <div class="logo">
+                <h1>OBH MAX</h1>
+            </div>
             <h1>¿Tienes una cuenta?</h1>
             <form action="/home.html" method="get" target="_self">
                 <div>
@@ -19,6 +25,11 @@
                 </div>
                 <div>
                     <input type="text" id="password" name="password" placeholder="Contraseña">
+                </div>
+
+                <div>
+                    <label for="remember-me">Recordar contraseña</label>
+                    <input type="checkbox" name="remember-me" id="">
                 </div>
                 <input type="submit" value="Login">
 
