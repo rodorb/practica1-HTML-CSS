@@ -9,6 +9,12 @@
     padding: 0 0 3rem 0;
 }
 
+.rejilla h1 {
+    margin-left: 3rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+}
 
 /* .rejilla img {
     height: 20rem;
