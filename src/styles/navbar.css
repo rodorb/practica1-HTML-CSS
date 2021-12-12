@@ -1,33 +1,117 @@
 .navbar {
-    display: flex;
-    background-color: #030328;
-    align-items: center;
-    height: var(--navbar-size);
-    justify-content: space-around;
-    position: fixed;
-    width: 100%;
-    z-index: 99999;
+  display: flex;
+  background-color: #030328;
+  align-items: center;
+  height: var(--navbar-size);
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
 }
 
 .navbar ul {
-    display: inline-flex;
-    list-style-type: none;
+  display: inline-flex;
+  list-style-type: none;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #9e86ff;
-    padding: 0.5rem;
-    font-size: 1.3rem;
+  text-decoration: none;
+  color: #9e86ff;
+  padding: 0.5rem;
+  font-size: 1.3rem;
 }
 
-.navbar a:hover {
-    color: white;
+.navbar a:hover,
+.navbar a:active {
+  color: white;
 }
 
 #searchbar {
-    border-radius: 1rem;
-    width: 30rem;
-    height: 2rem;
-    padding-left: 1rem;
+  border-radius: 1rem;
+  width: 30rem;
+  height: 2rem;
+  padding-left: 1rem;
+}
+
+.responsive-links-navbar {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .links-navbar {
+    display: none;
+  }
+
+  .responsive-links-navbar {
+    display: block;
+    padding: 0px 1.5rem 0 1.5rem;
+  }
+
+  /* burger menu */
+
+  .navbar .burger-label {
+    display: block;
+    width: var(--burger-width);
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .navbar .burger-label:before {
+    content: "";
+    box-shadow: 0 5px 0 0 rgb(255, 255, 255), 0 12px 0 0 rgb(255, 255, 255),
+      0 19px 0 0 rgb(255, 255, 255);
+    width: var(--burger-width);
+    height: 3px;
+    position: absolute;
+  }
+
+  #burger-checkbox {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    display: none;
+  }
+
+  #burger-checkbox:checked ~ #navbar-list {
+    display: flex;
+  }
+
+  /* menu de opciones */
+
+  #navbar-list {
+    margin: 0;
+    width: 200px;
+    background-color: #5702dd;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+
+    position: absolute;
+    top: var(--navbar-size);
+    right: 0;
+    height: calc(100vh - var(--navbar-size));
+    display: none;
+
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 0.5rem;
+  }
+
+  #navbar-list .navbar-item {
+    text-align: center;
+  }
+
+  #navbar-list a {
+    padding: 1rem 0;
+    width: 100%;
+    display: inline-block;
+    color: aliceblue;
+  }
+}
+
+@media (max-width: 1314px) {
+  .navbar a {
+    font-size: 1rem;
+  }
 }

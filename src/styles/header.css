@@ -32,7 +32,8 @@
   padding: 0 2px;
   transition: 250ms all;
 }
-.carousel section .item:hover {
+.carousel section .item:hover,
+.carousel section .item:active {
   margin: 0 40px;
   transform: scale(1.2);
 }
@@ -68,4 +69,11 @@
   top: 0;
   bottom: 0;
   right: 0;
+}
+
+
+@media (max-width: 1375px) {
+  .item {
+    height: 17rem;
+  }
 }

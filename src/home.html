@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>RRB Max</title>
-    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/rejilla.css">
     <link rel="stylesheet" href="./styles/footer.css">
@@ -24,14 +24,27 @@
         </a>
         <input type="text" name="searchbar" id="searchbar" placeholder="Buscar...">
 
-        <ul>
-            <li><a href="">Novedades</a></li>
-            <li><a href="">Series</a></li>
-            <li><a href="">Películas</a></li>
-            <li><a href="">Favoritos</a></li>
-        </ul>
+        <div class="links-navbar">
+            <ul>
+                <li class="navbar-item"><a href="#novedades">Novedades</a></li>
+                <li class="navbar-item"><a href="#series">Series</a></li>
+                <li class="navbar-item"><a href="#peliculas">Películas</a></li>
+                <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
+            </ul>
 
-        <a href="./index.html">Cerrar Sesión</a>
+            <a href="./index.html">Cerrar Sesión</a>
+        </div>
+        <div class="responsive-links-navbar">
+            <input type="checkbox" id="burger-checkbox">
+            <label for="burger-checkbox" class="burger-label"></label>
+            <ul id="navbar-list">
+                <li class="navbar-item"><a href="#novedades">Novedades</a></li>
+                <li class="navbar-item"><a href="#series">Series</a></li>
+                <li class="navbar-item"><a href="#peliculas">Películas</a></li>
+                <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
+            </ul>
+        </div>
+
     </nav>
 
     <header class="header">
@@ -110,7 +123,164 @@
 
     </header>
     <main class="rejilla">
-        <section>
+        <section id="novedades">
+            <h1>NOVEDADES</h1>
+            <!-- MOVIE 1 -->
+            <div class="row row2">
+                <div class="card" onclick="location.href='./content-detail.html'">
+                    <div class="card-favorite-selected">
+                        <i class="fas fa-heart text-danger"></i>
+                    </div>
+                    <img src="./img/m4.jpg" alt="">
+
+                    <div class="card-description">
+                        <p><strong>Joker</strong></p>
+                        <p><strong>Calificación: 9.2/10</strong></p>
+                        <p><strong>Año de publicación : 2019</strong></p>
+                        <p><strong>Sinopsis:</strong>
+                            <small>La pasión de Arthur Fleck,
+                                un hombre ignorado por la sociedad,
+                                es hacer reír a la gente. Sin embargo,
+                                una serie de trágicos sucesos harán que su visión
+                                del mundo se distorsione considerablemente convirtiéndolo
+                                en un brillante
+                                criminal</small>
+                        </p>
+
+
+
+                    </div>
+                </div>
+
+                <!-- MOVIE 2 -->
+                <div class="card" onclick="location.href='./content-detail.html'">
+                    <div class="card-favorite-unselected">
+                        <i class="fas fa-heart text-danger"></i>
+                    </div>
+                    <img src="./img/m4.jpg" alt="">
+
+                    <div class="card-description">
+                        <p><strong>Joker</strong></p>
+                        <p><strong>Calificación: 9.2/10</strong></p>
+                        <p><strong>Año de publicación : 2019</strong></p>
+                        <p><strong>Sinopsis:</strong>
+                            <small>La pasión de Arthur Fleck,
+                                un hombre ignorado por la sociedad,
+                                es hacer reír a la gente. Sin embargo,
+                                una serie de trágicos sucesos harán que su visión
+                                del mundo se distorsione considerablemente convirtiéndolo
+                                en un brillante
+                                criminal</small>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                <!-- MOVIE 3 -->
+                <div class="card" onclick="location.href='./content-detail.html'">
+                    <div class="card-favorite-selected">
+                        <i class="fas fa-heart text-danger"></i>
+                    </div>
+                    <img src="./img/m4.jpg" alt="">
+
+                    <div class="card-description">
+                        <p><strong>Joker</strong></p>
+                        <p><strong>Calificación: 9.2/10</strong></p>
+                        <p><strong>Año de publicación : 2019</strong></p>
+                        <p><strong>Sinopsis:</strong>
+                            <small>La pasión de Arthur Fleck,
+                                un hombre ignorado por la sociedad,
+                                es hacer reír a la gente. Sin embargo,
+                                una serie de trágicos sucesos harán que su visión
+                                del mundo se distorsione considerablemente convirtiéndolo
+                                en un brillante
+                                criminal</small>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                <!-- MOVIE 4 -->
+                <div class="card" onclick="location.href='./content-detail.html'">
+                    <div class="card-favorite-unselected">
+                        <i class="fas fa-heart text-danger"></i>
+                    </div>
+                    <img src="./img/m4.jpg" alt="">
+
+                    <div class="card-description">
+                        <p><strong>Joker</strong></p>
+                        <p><strong>Calificación: 9.2/10</strong></p>
+                        <p><strong>Año de publicación : 2019</strong></p>
+                        <p><strong>Sinopsis:</strong>
+                            <small>La pasión de Arthur Fleck,
+                                un hombre ignorado por la sociedad,
+                                es hacer reír a la gente. Sin embargo,
+                                una serie de trágicos sucesos harán que su visión
+                                del mundo se distorsione considerablemente convirtiéndolo
+                                en un brillante
+                                criminal</small>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                <!-- MOVIE 5 -->
+                <div class="card" onclick="location.href='./content-detail.html'">
+                    <div class="card-favorite-selected">
+                        <i class="fas fa-heart text-danger"></i>
+                    </div>
+                    <img src="./img/m4.jpg" alt="">
+
+                    <div class="card-description">
+                        <p><strong>Joker</strong></p>
+                        <p><strong>Calificación: 9.2/10</strong></p>
+                        <p><strong>Año de publicación : 2019</strong></p>
+                        <p><strong>Sinopsis:</strong>
+                            <small>La pasión de Arthur Fleck,
+                                un hombre ignorado por la sociedad,
+                                es hacer reír a la gente. Sin embargo,
+                                una serie de trágicos sucesos harán que su visión
+                                del mundo se distorsione considerablemente convirtiéndolo
+                                en un brillante
+                                criminal</small>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                <!-- MOVIE 6 -->
+                <div class="card" onclick="location.href='./content-detail.html'">
+                    <div class="card-favorite-unselected">
+                        <i class="fas fa-heart text-danger"></i>
+                    </div>
+                    <img src="./img/m4.jpg" alt="">
+
+                    <div class="card-description">
+                        <p><strong>Joker</strong></p>
+                        <p><strong>Calificación: 9.2/10</strong></p>
+                        <p><strong>Año de publicación : 2019</strong></p>
+                        <p><strong>Sinopsis:</strong>
+                            <small>La pasión de Arthur Fleck,
+                                un hombre ignorado por la sociedad,
+                                es hacer reír a la gente. Sin embargo,
+                                una serie de trágicos sucesos harán que su visión
+                                del mundo se distorsione considerablemente convirtiéndolo
+                                en un brillante
+                                criminal</small>
+                        </p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="peliculas">
             <h1>PELICULAS</h1>
             <div class="row row1">
 
@@ -571,7 +741,7 @@
 
         </section>
 
-        <section>
+        <section id="series">
             <h1>SERIES</h1>
             <!-- MOVIE 1 -->
             <div class="row row2">
@@ -729,8 +899,8 @@
 
         </section>
 
-        <section>
-            <h1>ANIME</h1>
+        <section id="favoritos">
+            <h1>FAVORITOS</h1>
             <!-- MOVIE 1 -->
             <div class="row row3">
                 <div class="card" onclick="location.href='./content-detail.html'">
