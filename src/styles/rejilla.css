@@ -1,89 +1,179 @@
 .rejilla {
-  padding: 0 12rem 6rem 12rem;
-  
+    padding: 0 13rem 6rem 13rem;
 }
 
 .rejilla .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 0 0 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 0 3rem 0;
 }
 
 .rejilla h1 {
-  margin-left: 1rem;
-  color: white;
-  font-weight: bolder;
-  font-size: 2rem;
+    margin-left: 1rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
 }
+
 
 /* .rejilla img {
     height: 20rem;
 } */
 
 .card {
-  position: relative;
-  cursor: pointer;
-  height: 20rem;
-  width: 13.5rem;
-  display: flex;
-  margin: 1rem;
+    position: relative;
+    cursor: pointer;
+    height: 20rem;
+    width: 13.5rem;
+    display: flex;
+    margin: 1rem;
 }
 
 .card-description {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .card-favorite-selected {
-  position: absolute;
-  color: red;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  text-decoration: none;
+    position: absolute;
+    color: red;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
 }
 
 .card-favorite-unselected {
-  position: absolute;
-  color: darkgray;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  text-decoration: none;
+    position: absolute;
+    color: darkgray;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
 }
 
 .card-favorite-selected:hover .fa-heart:before,
 .card-favorite-selected:active .fa-heart:before {
-  font-size: 1.5rem;
-  color: darkgray;
+    font-size: 1.5rem;
+    color: darkgray;
 }
 
 .card-favorite-unselected:hover .fa-heart:before,
-.card-favorite-unselected:active .fa-heart:before  {
-  font-size: 1.5rem;
-  color: red;
+.card-favorite-unselected:active .fa-heart:before {
+    font-size: 1.5rem;
+    color: red;
 }
 
 .card-description {
-  margin: 0 2px 2px 2px;
-  color: black;
-  display: none;
+    margin: 0 2px 2px 2px;
+    color: black;
+    display: none;
 }
 
 .card-description p {
-  margin: 0 0.8rem 0.8rem 0.8rem;
-  font-size: 0.9rem;
+    margin: 0 0.8rem 0.8rem 0.8rem;
+    font-size: 0.9rem;
 }
 
 .card:hover .card-description,
 .card:active .card-description {
-  display: block;
-  border-radius: 1rem;
-  background-image: linear-gradient(transparent, rgb(221, 221, 221));
-  text-shadow: 2px 2px 2px rgb(255 255 255 / 50%),
-    2px -2px 2px rgb(255 255 255 / 50%), -2px 2px 2px rgb(255 255 255 / 50%),
-    -2px -2px 2px rgb(255 255 255 / 50%);
+    display: block;
+    border-radius: 1rem;
+    background-image: linear-gradient(transparent, rgb(221, 221, 221));
+    text-shadow: 2px 2px 2px rgb(255 255 255 / 50%), 2px -2px 2px rgb(255 255 255 / 50%), -2px 2px 2px rgb(255 255 255 / 50%), -2px -2px 2px rgb(255 255 255 / 50%);
 }
+
+
+/* @media (min-width: 768px) and (max-width: 1023px) 
+@media (max-width: 767px) { */
+
+@media (min-width: 2560px) {
+    .card {
+        height: 28rem;
+        width: 19rem;
+        margin: 1rem;
+    }
+}
+
+
+/* @media (max-width: 1440px) {
+    .rejilla .row {
+        justify-content: space-evenly;
+    }
+    .card {
+        height: 26rem;
+        width: 17.6rem;
+        margin: 1rem;
+    }
+} */
+
+@media (min-width: 1024px) and (max-width: 2559px) {
+    .rejilla .row {
+        justify-content: flex-start;
+    }
+    .rejilla {
+        padding: 0 3rem 6rem 10vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card-description p {
+        margin: 0 0.5rem 0.5rem 0.5rem;
+        font-size: 0.7rem;
+    }
+    .card {
+        height: 15rem;
+        width: 10rem;
+        margin: 1rem;
+    }
+    .rejilla .row {
+        justify-content: center;
+    }
+    .rejilla {
+        padding: 0 1rem 6rem 1rem;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .card {
+        height: 15rem;
+        width: 10rem;
+        margin: 1rem;
+    }
+    .card-description p {
+        margin: 0 0.5rem 0.5rem 0.5rem;
+        font-size: 0.7rem;
+    }
+    .rejilla {
+        padding: 0 1rem 6rem 1rem;
+    }
+    .rejilla .row {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .card {
+        height: 28rem;
+        width: 19rem;
+        margin: 1rem;
+    }
+    .rejilla {
+        padding: 0 1rem 6rem 1rem;
+    }
+}
+
+@media (max-width: 374px) {
+    .card {
+        height: 24rem;
+        width: 16.2rem;
+    }
+    .rejilla {
+        padding: 0 1rem 6rem 1rem;
+    }
+}
+
+
 /* 
 @media (max-width: 1375px) {
   .card {
@@ -99,7 +189,6 @@
   }
 } */
 
-
 @media (max-width: 1871px) {
     /* .card {
         height: 15rem;
@@ -112,7 +201,8 @@
       margin: 0 0.5rem 0.5rem 0.5rem;
       font-size: 0.7rem;
     } */
-  }
+}
+
 
 /* @media (max-width: 768px) {
   .card {

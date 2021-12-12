@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/rejilla.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" crossorigin="anonymous" />
 
 </head>
 
@@ -42,6 +41,7 @@
                 <li class="navbar-item"><a href="#series">Series</a></li>
                 <li class="navbar-item"><a href="#peliculas">Películas</a></li>
                 <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
+                <li class="navbar-item"><a href="./index.html">Cerrar Sesión</a></li>
             </ul>
         </div>
 
@@ -50,74 +50,74 @@
     <header class="header">
         <div class="carousel">
 
-            <section id="section1">
-                <a href="#section3" class="arrow__btn left-arrow">‹</a>
-                <div class="item">
-                    <a href="#">
-                        <img src="./img/carousel.jpg" alt="Describe Image">
+            <section id="carousel-section1">
+                <a href="#carousel-section3" class="arrow-button left-arrow">‹</a>
+                <div class="carousel-item">
+                    <a href="./not-found.html">
+                        <img src="./img/carousel.jpg" alt="Highlighted content">
                     </a>
                 </div>
-                <div class="item">
+                <div class="carousel-item item2">
 
-                    <a href="#">
-                        <img src="./img/carousel.jpg" alt="Describe Image">
+                    <a href="./not-found.html">
+                        <img src="./img/carousel.jpg" alt="Highlighted content">
 
 
                     </a>
                 </div>
-                <div class="item">
+                <div class="carousel-item item3">
 
-                    <a href="#">
-                        <img src="./img/carousel.jpg" alt="Describe Image">
+                    <a href="./not-found.html">
+                        <img src="./img/carousel.jpg" alt="Highlighted content">
                     </a>
                 </div>
 
-                <a href="#section2" class="arrow__btn right-arrow">›</a>
+                <a href="#carousel-section2" class="arrow-button right-arrow">›</a>
             </section>
 
-            <section id="section2">
-                <a href="#section1" class="arrow__btn left-arrow">‹</a>
-                <div class="item">
-                    <a href="#">
-                        <img src="./img/carousel2.jpg" alt="Describe Image">
+            <section id="carousel-section2">
+                <a href="#carousel-section1" class="arrow-button left-arrow">‹</a>
+                <div class="carousel-item">
+                    <a href="./not-found.html">
+                        <img src="./img/carousel2.jpg" alt="Highlighted content">
                     </a>
 
                 </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="./img/carousel2.jpg" alt="Describe Image">
+                <div class="carousel-item item2">
+                    <a href="./not-found.html">
+                        <img src="./img/carousel2.jpg" alt="Highlighted content">
                     </a>
                 </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="./img/carousel2.jpg" alt="Describe Image">
+                <div class="carousel-item item3">
+                    <a href="./not-found.html">
+                        <img src="./img/carousel2.jpg" alt="Highlighted content">
                     </a>
                 </div>
-                <a href="#section3" class="arrow__btn right-arrow">›</a>
+                <a href="#carousel-section3" class="arrow-button right-arrow">›</a>
             </section>
 
-            <section id="section3">
-                <a href="#section2" class="arrow__btn left-arrow">‹</a>
-                <div class="item">
-                    <a href="#">
-                        <img src="./img/carousel3.jpg" alt="Describe Image">
+            <section id="carousel-section3">
+                <a href="#carousel-section2" class="arrow-button left-arrow">‹</a>
+                <div class="carousel-item">
+                    <a href="./not-found.html">
+                        <img src="./img/carousel3.jpg" alt="Highlighted content">
                     </a>
 
                 </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="./img/carousel3.jpg" alt="Describe Image">
+                <div class="carousel-item item2">
+                    <a href="./not-found.html">
+                        <img src="./img/carousel3.jpg" alt="Highlighted content">
                     </a>
 
                 </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="./img/carousel3.jpg" alt="Describe Image">
+                <div class="carousel-item item3">
+                    <a href="./not-found.html">
+                        <img src="./img/carousel3.jpg" alt="Highlighted content">
                     </a>
 
                 </div>
 
-                <a href="#section1" class="arrow__btn right-arrow">›</a>
+                <a href="#carousel-section1" class="arrow-button right-arrow">›</a>
             </section>
         </div>
 
@@ -127,7 +127,7 @@
             <h1>NOVEDADES</h1>
             <!-- MOVIE 1 -->
             <div class="row row2">
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -150,10 +150,10 @@
 
 
                     </div>
-                </div>
+                </a>
 
                 <!-- MOVIE 2 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -176,9 +176,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 3 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -201,9 +201,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 4 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -226,9 +226,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 5 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -251,9 +251,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 6 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -276,7 +276,7 @@
 
 
                     </div>
-                </div>
+                </a>
             </div>
 
         </section>
@@ -285,7 +285,7 @@
             <div class="row row1">
 
                 <!-- MOVIE 1 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -308,10 +308,10 @@
 
 
                     </div>
-                </div>
+                </a>
 
                 <!-- MOVIE 2 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -334,9 +334,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 3 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -359,9 +359,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 4 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -384,9 +384,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 5 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -409,9 +409,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 6 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -434,9 +434,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 1 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -459,10 +459,10 @@
 
 
                     </div>
-                </div>
+                </a>
 
                 <!-- MOVIE 2 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -485,9 +485,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 3 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -510,9 +510,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 4 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -535,9 +535,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 5 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -560,9 +560,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 6 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -585,9 +585,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 1 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -610,10 +610,10 @@
 
 
                     </div>
-                </div>
+                </a>
 
                 <!-- MOVIE 2 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -636,9 +636,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 3 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -661,9 +661,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 4 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -686,9 +686,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 5 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -711,9 +711,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 6 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -736,7 +736,7 @@
 
 
                     </div>
-                </div>
+                </a>
             </div>
 
         </section>
@@ -745,7 +745,7 @@
             <h1>SERIES</h1>
             <!-- MOVIE 1 -->
             <div class="row row2">
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -768,10 +768,10 @@
 
 
                     </div>
-                </div>
+                </a>
 
                 <!-- MOVIE 2 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -794,9 +794,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 3 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -819,9 +819,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 4 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -844,9 +844,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 5 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -869,9 +869,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 6 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-unselected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -894,7 +894,7 @@
 
 
                     </div>
-                </div>
+                </a>
             </div>
 
         </section>
@@ -903,7 +903,7 @@
             <h1>FAVORITOS</h1>
             <!-- MOVIE 1 -->
             <div class="row row3">
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -926,10 +926,10 @@
 
 
                     </div>
-                </div>
+                </a>
 
                 <!-- MOVIE 2 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -952,9 +952,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 3 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -977,9 +977,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 4 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -1002,9 +1002,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 5 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -1027,9 +1027,9 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- MOVIE 6 -->
-                <div class="card" onclick="location.href='./content-detail.html'">
+                <a class="card" href="./content-detail.html">
                     <div class="card-favorite-selected">
                         <i class="fas fa-heart text-danger"></i>
                     </div>
@@ -1052,7 +1052,7 @@
 
 
                     </div>
-                </div>
+                </a>
             </div>
 
         </section>

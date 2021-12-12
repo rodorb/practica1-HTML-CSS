@@ -1,5 +1,5 @@
 .video-player {
-    height: 48rem;
+    height: 100%;
     background: black;
     width: 100%;
 }
@@ -66,6 +66,9 @@
 .related-videos {
     height: 85%;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .related-videos::-webkit-scrollbar,
@@ -99,4 +102,35 @@
 .related-title {
     height: 3rem;
     margin: 1rem;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 52rem 52rem 18rem;
+        gap: 1rem;
+        grid-template-areas: "trailer" "info" "rejilla";
+        padding: 2rem;
+    }
+    .related-videos {
+        display: flex;
+        /* width: 44rem; */
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+        height: 68%;
+    }
+    .related-video {
+        margin: 0 1rem 0rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30rem 30rem 18rem;
+        gap: 1rem;
+        grid-template-areas: "trailer" "info" "rejilla";
+        padding: 2rem;
+    }
 }
