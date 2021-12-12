@@ -1,0 +1,36 @@
+main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    font-family: HBO, Arial, Helvetica, sans-serif;
+    font-size: 11rem;
+    color: white;
+    text-align: center;
+}
+
+main ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: HBO, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+main a:hover {
+    color: rgb(204, 58, 58);
+}

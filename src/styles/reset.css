@@ -1,8 +1,4 @@
 :root {
-    /* font-size: 16px; */
-    /* hace el desplazamiento en el navegador más suave,
-    solo funciona si la navegación es de un evento
-    generado en el DOM */
     scroll-behavior: smooth;
 }
 
@@ -10,50 +6,20 @@
     font-family: Gilroy, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
 }
 
-
-/* *,
-*::after,
-*::before {
-    font-family: Roboto, Arial, Helvetica, sans-serif; */
-
-
-/* Esto hace que el tamaño del contenido 
-        tenga en cuenta el padding y el border
-        
-       Al contrario, con content-box el tamaño
-       del contenido, no tiene en cuenta el padding
-       y el border*/
-
-
-/* box-sizing: border-box; */
-
-
-/* } */
-
 body {
-    /* quiero ocupar el 100% de la pantalla, sin espacios */
     margin: 0;
     padding: 0;
 }
 
 body::-webkit-scrollbar {
     width: 12px;
-    /* width of the entire scrollbar */
 }
 
 * ::-webkit-scrollbar-track {
     background: rgb(27, 27, 27);
-    /* color of the tracking area */
 }
 
 * ::-webkit-scrollbar-thumb {
     background-color: rgb(61, 61, 61, 0.5);
-    /* color of the scroll thumb */
     border-radius: 1rem;
-    /* roundness of the scroll thumb */
-    /* border: 3px solid orange; */
-    /* creates padding around scroll thumb */
 }
-/* img {
-    max-width: 100%;
-} */

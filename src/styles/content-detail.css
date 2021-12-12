@@ -114,7 +114,6 @@
     }
     .related-videos {
         display: flex;
-        /* width: 44rem; */
         flex-direction: column;
         flex-wrap: wrap;
         overflow-x: scroll;

@@ -1,37 +1,17 @@
-/* Declaro la fuente con el nombre que quiero
-    en este caso 'GoT' de acuerdo al archivo
-    gt.ttf situado en fonts */
-
 @font-face {
     font-family: HBO;
     src: url("../fonts/MARBOLD.TTF");
 }
 
 :root {
-    /* Declaro una variable en el root 
-        que será el tamaño de 50px*/
     --navbar-size: 5rem;
     --footer-size: 100%;
     --burger-width: 25px;
-    /* --burger-width: 25px;
-    --navbar-padding: 5px; */
 }
 
 * img {
     border-radius: 1rem;
 }
-
-
-/* 
-    Aplica estilos al hijo directo de section que sea un h1
-    " " hijos de cualquier nivel
-    ">" hijo directo
-    "+" hermanos adyacentes
-    "~" hermanos en general 
-
-    La , separa los elementos, ids, clases, etc... a las que quiero
-    aplicar los estilos
-*/
 
 .logo h1 {
     font-family: HBO, Arial, Helvetica, sans-serif;
@@ -40,7 +20,6 @@
 }
 
 body {
-    /* background: linear-gradient(rgba(58, 56, 56, 0.5), rgba(58, 56, 56, .5)), url('../img/bg-image.jpg'); */
     background: linear-gradient(rgba(75, 75, 75, 0.2), rgba(75, 75, 75, 0.2)), url(../img/hbomax_sizzle_glow.webp) no-repeat;
     background-size: cover;
     z-index: -1;
@@ -51,12 +30,3 @@ body {
         font-size: 2rem;
     }
 }
-
-
-/* section {
-    padding: 2rem 1rem;
-}
-
-section img {
-    width: 100%;
-} */

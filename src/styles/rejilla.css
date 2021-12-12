@@ -83,10 +83,6 @@
     text-shadow: 2px 2px 2px rgb(255 255 255 / 50%), 2px -2px 2px rgb(255 255 255 / 50%), -2px 2px 2px rgb(255 255 255 / 50%), -2px -2px 2px rgb(255 255 255 / 50%);
 }
 
-
-/* @media (min-width: 768px) and (max-width: 1023px) 
-@media (max-width: 767px) { */
-
 @media (min-width: 2560px) {
     .card {
         height: 28rem;
@@ -94,18 +90,6 @@
         margin: 1rem;
     }
 }
-
-
-/* @media (max-width: 1440px) {
-    .rejilla .row {
-        justify-content: space-evenly;
-    }
-    .card {
-        height: 26rem;
-        width: 17.6rem;
-        margin: 1rem;
-    }
-} */
 
 @media (min-width: 1024px) and (max-width: 2559px) {
     .rejilla .row {
@@ -172,45 +156,3 @@
         padding: 0 1rem 6rem 1rem;
     }
 }
-
-
-/* 
-@media (max-width: 1375px) {
-  .card {
-    height: 15rem;
-    width: 10rem;
-  }
-  .rejilla {
-    padding: 0 2rem 1rem 2rem;
-  }
-  .card-description p {
-    margin: 0 0.5rem 0.5rem 0.5rem;
-    font-size: 0.7rem;
-  }
-} */
-
-@media (max-width: 1871px) {
-    /* .card {
-        height: 15rem;
-        width: 10rem;
-    }
-     .rejilla {
-      padding: 0 2rem 1rem 2rem;
-    } */
-    /*.card-description p {
-      margin: 0 0.5rem 0.5rem 0.5rem;
-      font-size: 0.7rem;
-    } */
-}
-
-
-/* @media (max-width: 768px) {
-  .card {
-    height: 15rem;
-    width: 10rem;
-  }
-
-  .rejilla {
-    padding: 0 2rem 1rem 2rem;
-  }
-} */
