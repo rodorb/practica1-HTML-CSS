@@ -34,3 +34,21 @@ main a {
 main a:hover {
     color: rgb(204, 58, 58);
 }
+
+@media (max-width: 1024px) {
+    main h1 {
+        font-size: 6rem;
+    }
+    main a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    main h1 {
+        font-size: 4rem;
+    }
+    main a {
+        font-size: 1rem;
+    }
+}
